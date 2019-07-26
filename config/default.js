@@ -4,7 +4,7 @@ config();
 module.exports = {
   project: "web-onefx-boilerplate",
   server: {
-    port: process.env.PORT || 5000,
+    port: process.env.PORT || 5001,
     staticDir: "./dist",
     delayInitMiddleware: false,
     cookie: {
@@ -34,15 +34,25 @@ module.exports = {
   csp: {
     "default-src": ["none"],
     "manifest-src": ["self"],
-    "style-src": ["self", "unsafe-inline", "https://fonts.googleapis.com/css"],
+    "style-src": [
+      "self",
+      "unsafe-inline",
+      "https://fonts.googleapis.com/css",
+      "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/"
+    ],
     "frame-src": [],
     "connect-src": ["self"],
     "child-src": ["self"],
-    "font-src": ["self", "data:", "https://fonts.gstatic.com/"],
-    "img-src": ["*"],
+    "font-src": [
+      "self",
+      "data:",
+      "https://fonts.gstatic.com/",
+      "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/fonts/"
+    ],
+    "img-src": ["*", "data:"],
     "media-src": ["self"],
     "object-src": ["self"],
     "script-src": ["self", "https://www.google-analytics.com/"]
   },
-  apiGatewayUrl: "http://localhost:5000/api-gateway/"
+  apiGatewayUrl: "http://localhost:5001/api-gateway/"
 };
