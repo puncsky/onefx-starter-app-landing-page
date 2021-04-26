@@ -175,7 +175,7 @@
     "validator": "10.11.0"
   },
   "engines": {
-    "node": "10.16.0",
+    "node": "10.24.1",
     "npm": "6.10.2"
   },
   "private": true
