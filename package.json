@@ -150,7 +150,7 @@
     "graphql-tag": "2.10.1",
     "is-browser": "2.1.0",
     "isomorphic-unfetch": "3.0.0",
-    "jsonwebtoken": "8.5.1",
+    "jsonwebtoken": "9.0.0",
     "mongoose": "5.6.6",
     "nodemailer": "5.1.1",
     "nodemailer-mailgun-transport": "1.4.0",
